@@ -3,6 +3,8 @@ COMMONFORM=node_modules/.bin/commonform
 
 all: $(TARGET)
 
+pdf: $(TARGET:docx=pdf)
+
 %.docx: %.commonform %.title.txt %.blanks.json %.signatures.json $(COMMONFORM)
 	$(COMMONFORM) render \
 		--blanks $*.blanks.json \
@@ -12,6 +14,9 @@ all: $(TARGET)
 		--title "$(shell cat $*.title.txt)" \
 		< $*.commonform \
 		> $@
+
+%.pdf: %.docx
+	doc2pdf $<
 
 $(COMMONFORM):
 	npm i --save commonform-cli
@@ -29,4 +34,4 @@ critique: $(TARGET:docx=commonform) $(COMMONFORM)
 	$(COMMONFORM) critique < $<
 
 clean:
-	rm -f $(TARGET)
+	rm -f $(TARGET) $(TARGET:docx=pdf)
