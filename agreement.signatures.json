@@ -12,5 +12,9 @@
       { "name": "Second, LLC",
         "jurisdiction": "California",
         "form": "limited liability company",
-        "by": "Manager" } ],
+        "by": "Manager" },
+      { "name": "Third, LLP",
+        "jurisdiction": "New York",
+        "form": "limited liability partnership",
+        "by": "General Partner" } ],
     "information": [ "address", "email" ] } ]
