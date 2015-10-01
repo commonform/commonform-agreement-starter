@@ -1,0 +1,14 @@
+[ { "header": "The parties are signing this agreement on the date stated in the introductory clause.",
+    "entities": [
+      { "name": "First, Inc.",
+        "jurisdiction": "Delaware",
+        "form": "corporation",
+        "by": "Chief Executive Officer" } ],
+    "information": [ "address", "email" ] },
+  { "header": "The parties are signing this agreement on the date stated in the introductory clause.",
+    "entities": [
+      { "name": "Second, LLC",
+        "jurisdiction": "California",
+        "form": "limited liability company",
+        "by": "Manager" } ],
+    "information": [ "address", "email" ] } ]
