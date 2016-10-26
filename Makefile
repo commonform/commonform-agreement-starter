@@ -19,7 +19,7 @@ pdf: $(TARGET:docx=pdf)
 	doc2pdf $<
 
 $(COMMONFORM):
-	npm i --save commonform-cli
+	npm i --save "commonform-cli@^0.23.0"
 
 .SECONDARY: node_modules
 
