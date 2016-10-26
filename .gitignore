@@ -1,3 +1,5 @@
 *.docx
 *.pdf
+*.html
+*.md
 node_modules

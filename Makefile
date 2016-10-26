@@ -1,9 +1,14 @@
-TARGET=agreement.docx
 COMMONFORM=node_modules/.bin/commonform
 
-all: $(TARGET)
+all: docx
 
-pdf: $(TARGET:docx=pdf)
+docx: agreement.docx
+
+pdf: agreement.pdf
+
+html: agreement.html
+
+md: agreement.md
 
 %.docx: %.commonform %.title.txt %.blanks.json %.signatures.json $(COMMONFORM)
 	$(COMMONFORM) render \
@@ -12,6 +17,21 @@ pdf: $(TARGET:docx=pdf)
 		--number ase \
 		--signatures $*.signatures.json \
 		--title "$(shell cat $*.title.txt)" \
+		< $*.commonform \
+		> $@
+
+%.html: %.commonform %.blanks.json $(COMMONFORM)
+	$(COMMONFORM) render \
+		--blanks $*.blanks.json \
+		--format html5 \
+		--ordered-lists \
+		< $*.commonform \
+		> $@
+
+%.md: %.commonform %.blanks.json $(COMMONFORM)
+	$(COMMONFORM) render \
+		--blanks $*.blanks.json \
+		--format markdown \
 		< $*.commonform \
 		> $@
 
