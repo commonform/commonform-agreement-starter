@@ -16,6 +16,18 @@
     ]
   },
   {
+    "samePage": true,
+    "term": "Guarantor",
+    "entities": [
+      {
+        "name": "Some Bigger, Inc.",
+        "jurisdiction": "Delaware",
+        "form": "corporation",
+        "by": "Chief Executive Officer"
+      }
+    ]
+  },
+  {
     "header": "The parties are signing this agreement on the date stated in the introductory clause.",
     "term": "Second",
     "entities": [
