@@ -1,20 +1,40 @@
-[ { "header": "The parties are signing this agreement on the date stated in the introductory clause.",
+[
+  {
+    "header": "The parties are signing this agreement on the date stated in the introductory clause.",
     "term": "First",
     "entities": [
-      { "name": "First, Inc.",
+      {
+        "name": "First, Inc.",
         "jurisdiction": "Delaware",
         "form": "corporation",
-        "by": "Chief Executive Officer" } ],
-    "information": [ "address", "email" ] },
-  { "header": "The parties are signing this agreement on the date stated in the introductory clause.",
+        "by": "Chief Executive Officer"
+      }
+    ],
+    "information": [
+      "address",
+      "email"
+    ]
+  },
+  {
+    "header": "The parties are signing this agreement on the date stated in the introductory clause.",
     "term": "Second",
     "entities": [
-      { "name": "Second, LLC",
+      {
+        "name": "Second, LLC",
         "jurisdiction": "California",
         "form": "limited liability company",
-        "by": "Manager" },
-      { "name": "Third, LLP",
+        "by": "Manager"
+      },
+      {
+        "name": "Third, LLP",
         "jurisdiction": "New York",
         "form": "limited liability partnership",
-        "by": "General Partner" } ],
-    "information": [ "address", "email" ] } ]
+        "by": "General Partner"
+      }
+    ],
+    "information": [
+      "address",
+      "email"
+    ]
+  }
+]
