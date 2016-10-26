@@ -5,9 +5,9 @@ With Git, Node.js, and npm installed:
 ```shellsession
 $ git clone https://github.com/commonform/commonform-agreement-starter agreement
 $ cd agreement
-$ make # Builds document.docx.
-$ make html # Builds document.docx.
-$ make markdown # Builds document.docx.
+$ make # Builds agreement.docx.
+$ make html # Builds agreement.docx.
+$ make markdown # Builds agreement.docx.
 $ make lint # Checks for structural issues.
 $ make critique # Mocks archaic and problematic word choices.
 ```
@@ -15,5 +15,5 @@ $ make critique # Mocks archaic and problematic word choices.
 With Unoconv installed:
 
 ```shellsession
-$ make pdf # Builds document.pdf.
+$ make pdf # Builds agreement.pdf.
 ```
